@@ -3,7 +3,6 @@ site_url: https://G-Tenderfoot.github.io/mymkdocs
 site_author: Tenderfoot
 theme:
   name: material #主题
-  custom_dir: docs/overrides
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -55,7 +54,7 @@ copyright: 'Copyright &copy; 2024-2024 Tenderfoot'
 
 nav:
   - 简介:
-    - Getting Started: index.md
+    - Welcome: index.md
     - 可能进行的项目: Blogs/projects.md
   - 杂项:
     - Test 1: Blogs/Test 1.md
