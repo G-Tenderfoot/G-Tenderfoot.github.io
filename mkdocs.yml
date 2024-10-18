@@ -17,7 +17,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: red
+      accent: blue
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -51,6 +51,9 @@ theme:
   language: zh # 一些提示性的文字会变成中文
 
 nav: 
+  - 数学分析：
+  - 抽象代数：
+  - 常微分方程：
   - 杂项:
     - Test 1: Blogs/1.md  #.md文件的相对路径
     - Test 2: Blogs/2.md
