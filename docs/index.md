@@ -1,3 +1,8 @@
+---
+comments: true
+---
+
+
 # Welcome to Tenderoot's Blog
 
 ## 内容简介
