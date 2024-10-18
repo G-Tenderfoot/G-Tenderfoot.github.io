@@ -51,13 +51,10 @@ theme:
   language: zh # 一些提示性的文字会变成中文
 
 nav: 
-  - 数学分析：
-    - Test 1: Blogs/1.md
-  - 抽象代数：
-    - Test 1: Blogs/1.md
-  - 常微分方程：
-    - Test 1: Blogs/1.md
-  - 杂项:
-    - Test 1: Blogs/1.md  #.md文件的相对路径
-    - Test 2: Blogs/2.md
+  - 简介：
+    - Getting Started: index.md
+  - 杂项：
+    -Test 1: Blogs/1.md
+    -Test 2: Blogs/2.md
+
 

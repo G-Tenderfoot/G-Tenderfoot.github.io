@@ -1,17 +1,4 @@
-# Welcome to MkDocs
+# Welcome to Tenderoot's Blog
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+这是一名数学系本科生的笔记博客, 里面是一些我的不是很成熟的想法以及课堂笔记. 当然， 错误自然是有的
+而且可能会有很多. 欢迎各位对我的博客进行错误修改与内容补充.
