@@ -48,3 +48,158 @@ theme:
 nav: 
   - 杂项:
     - Test: Blogs/1.md  #.md文件的相对路径
+
+icon:
+    repo: fontawesome/brands/github #右上角图标
+edit_uri: edit/main/docs # 编辑按钮跳转的链接 
+repo_url: https://github.com/G-Tenderfoot/G-Tenderfoot.github.io # 右上角点击跳转的链接
+repo_name: G-Tenderfoot.github.io # 右上角的名字
+
+copyright: Copyright &copy; 2024~2024 G-Tenderfoot/All Rights Reserved. # 左下角的版权声明
+extra:
+  # tags:
+  #   HTML5: html
+  #   JavaScript: js
+  #   CSS: css
+  alternate:
+    - name: English
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
+      lang: en
+    - name: 中国(台湾)
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+      lang: zh-TW
+  generator: true  #删除页脚显示“使用 MkDocs 材料制造”
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/G-Tenderfoot
+    - icon: fontawesome/regular/envelope
+      link: mailto:<3023233092@tju.edu.cn> #联系方式
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/1484288330?spm_id_from=333.1007.0.0
+  analytics: 
+    provider: google
+    property: G-29HZMNR0KG
+    feedback:
+      title: 此页面有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            谢谢你的反馈！
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+
+  # consent:
+  #   title: Cookie consent
+  #   description: >- 
+  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+  #     如果你同意,你可以帮助我们让我们的网站更好
+
+
+
+plugins:
+  # - glightbox
+  - search
+  - git-revision-date-localized:
+      type: iso_date
+      enable_creation_date: false
+      exclude:
+        - index.md 
+        - waline.md
+  # - git-authors:
+  #     exclude:
+  #       - index.md
+  - blog:
+      post_date_format: full #时间
+      draft: true
+      draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
+      post_readtime: true
+      post_readtime_words_per_minute: 265  #计算帖子的阅读时间时读者每分钟预计阅读的字数
+      post_url_format: "{date}/{slug}"
+      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      # categories_toc: true
+      # pagination_per_page: 5
+      pagination_url_format: "page/{page}"
+      authors_file: "{blog}/.authors.yml"  #作者信息
+  - tags:
+      tags_file: tag.md  #分类标签
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+  - pymdownx.arithmatex:  # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - markdown.extensions.toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: "\ue157"
+
+extra_javascript:
+  - javascripts/extra.js 
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - javascripts/mathjax-config.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
+
+  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
+  - ckplayer/js/ckplayer.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
+  # - javascripts/backbound1.js
+  # - javascripts/rellax.min.js
+  - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
+  # - https://res.zvo.cn/translate/translate.js  # Translate
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/link.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
+  # - stylesheets/extra1.css
+  # - stylesheets/video.css
+  # - https://unpkg.com/@waline/client@v2/dist/waline.css
+  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #评论
+  - ckplayer/css/ckplayer.css
+  - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
+
