@@ -1,0 +1,5 @@
+site_name: Tenderfoot's Blog
+site_url: https://G-Tenderfoot.github.io/mymkdocs
+site_author: Tenderfoot
+theme:
+  name: material #主题
