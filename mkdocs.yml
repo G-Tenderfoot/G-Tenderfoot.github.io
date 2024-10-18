@@ -54,8 +54,8 @@ copyright: 'Copyright &copy; 2024-2024 Tenderfoot'
 
 nav:
   - 简介:
-    - 可能进行的项目: Blogs/projects.md
     - Getting Started: index.md
+    - 可能进行的项目: Blogs/projects.md
   - 杂项:
     - Test 1: Blogs/Test 1.md
     - Test 2: Blogs/Test 2.md
