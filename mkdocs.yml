@@ -8,7 +8,7 @@ theme:
 
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
-      primary: white # 上方的
+      primary: black # 上方的
       accent: indigo # 链接等可交互元件的高亮色
       # teal 
       toggle:
@@ -47,5 +47,6 @@ theme:
 
 nav: 
   - 杂项:
-    - Test: Blogs/1.md  #.md文件的相对路径
+    - Test 1: Blogs/1.md  #.md文件的相对路径
+    - Test 2: Blogs/2.md
 
