@@ -55,11 +55,11 @@ copyright: 'Copyright &copy; 2024-2024 Tenderfoot'
 
 nav:
   - 简介:
-    - Getting Started: index.md
+    - Getting Started: Blogs/Blogindex.md
     - 可能进行的项目: Blogs/projects.md
   - 数学分析:
-    - Test 1: Blogs/Test 1.md
-    - Test 2: Blogs/Test 2.md
+    - Test 1: Blogs/Test 2 copy.md
+    - Test 2: Blogs/Test 2 copy 2.md
   - 杂项:
     - Test 1: Blogs/Test 1.md
     - Test 2: Blogs/Test 2.md
