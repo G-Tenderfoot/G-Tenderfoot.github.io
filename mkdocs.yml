@@ -57,9 +57,9 @@ nav:
   - 简介:
     - Getting Started: intro/Blogindex.md
     - 可能进行的项目: intro/projects.md
-  - 数学分析:
-    - Test 1: others/Test 2 copy.md
-    - Test 2: others/Test 2 copy 2.md
+  - 常微分方程:
+    - 概念既一阶常微分方程:
+      - 概念: ODE/1.1.md
   - 杂项:
     - Test 1: others/Test 1.md
     - Test 2: others/Test 2.md
