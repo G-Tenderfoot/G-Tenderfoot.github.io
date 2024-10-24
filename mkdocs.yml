@@ -66,8 +66,11 @@ nav:
     - Getting Started: intro/Blogindex.md
     - 可能进行的项目: intro/projects.md
   - 常微分方程:
-    - 概念既一阶常微分方程:
+    - 概念及一阶常微分方程:
       - 概念: ODE/1.1.md
+  - 一些概念的理解:
+    - 抽象代数:
+      - 商群与理想: Understanding/商群与理想.md
   - 杂项:
     - Test 1: others/Test 1.md
     - Test 2: others/Test 2.md
