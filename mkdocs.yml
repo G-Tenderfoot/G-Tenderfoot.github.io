@@ -68,6 +68,7 @@ nav:
   - 抽象代数:
     - 唯一分解整环:
       - 唯一分解整环: Abstract algebra/2.2.md
+      - 单变元多项式: Abstract algebra/2.3.md
   - 常微分方程:
     - 概念及一阶常微分方程:
       - 概念: ODE/1.1.md
