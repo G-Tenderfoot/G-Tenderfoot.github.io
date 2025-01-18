@@ -69,14 +69,14 @@ nav:
     - 唯一分解整环:
       - 唯一分解整环: Abstract algebra/2.2.md
       - 单变元多项式: Abstract algebra/2.3.md
+    - Galois 理论概述: Abstract algebra/Galois理论概述/Galois理论概述.md
+        - 引言: Abstract algebra/Galois理论概述/Galois_0.md
   - 常微分方程:
     - 概念及一阶常微分方程:
       - 概念: ODE/1.1.md
   - 一些概念的理解:
     - 抽象代数:
       - 商群与理想: Understanding/商群与理想.md
-      - Galois理论概述: Understanding/Galois理论概述/Galois理论概述.md 
-        - 引言: Understanding/Galois理论概述/Galois_0.md 
   - 杂项:
     - Test 1: others/Test 1.md
     - Test 2: others/Test 2.md
