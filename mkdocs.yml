@@ -75,6 +75,8 @@ nav:
   - 一些概念的理解:
     - 抽象代数:
       - 商群与理想: Understanding/商群与理想.md
+      - Galois理论概述: Understanding/Galois理论概述/Galois理论概述.md
+        - 引言: Understanding/Galois理论概述/Galois_0.md
   - 杂项:
     - Test 1: others/Test 1.md
     - Test 2: others/Test 2.md
