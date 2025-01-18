@@ -6,7 +6,7 @@
 
 $f(x)=x^2-2$, 则 $\mathbb Q[\sqrt{2}]=\{a+b\sqrt{2}\mid a,b\in\mathbb Q\}$ 为 $f(x)$ 的分裂域. 
 
-其中形如 $F[u]$ 的记法表示在域 $F$ 中添加 $u$ 使其称为域. 更通俗地, 我们仍以上述为例, 我们像 $\mathbb Q$ 中添加 $\sqrt 2$ 后得到了 $\mathbb Q\cup\{\sqrt 2\}$, 但它不是域. 为了让其对加减乘除封闭, 我们只好进行更一般的构造, 进而得到了形如 $a+b\sqrt{2}$ 这样的元素使其对四则运算封闭, 因此将 $\{a+b\sqrt{2}\mid a,b\in\mathbb Q\}$ 定义为 $\mathbb Q[\sqrt{2}]$, 表示向 $\mathbb Q$ 中添加 $\sqrt 2$ 形成的域. 我们把这个过程叫做**域扩张**.
+其中形如 $F[u]$ 的记法表示在域 $F$ 中添加 $u$ 使其称为域. 更通俗地, 我们仍以上述为例, 我们向 $\mathbb Q$ 中添加 $\sqrt 2$ 后得到了 $\mathbb Q\cup\{\sqrt 2\}$, 但它不是域. 为了让其对加减乘除封闭, 我们只好进行更一般的构造, 进而得到了形如 $a+b\sqrt{2}$ 这样的元素使其对四则运算封闭. 因此将 $\{a+b\sqrt{2}\mid a,b\in\mathbb Q\}$ 定义为 $\mathbb Q[\sqrt{2}]$, 表示向 $\mathbb Q$ 中添加 $\sqrt 2$ 形成的域. 我们把这个过程叫做**域扩张**.
 
 为什么求解上述方程时会进行域扩张? 因为其根不在系数域内.
 
@@ -14,9 +14,9 @@ $f(x)=x^2-2$, 则 $\mathbb Q[\sqrt{2}]=\{a+b\sqrt{2}\mid a,b\in\mathbb Q\}$ 为 
 
 下面我们考虑根的置换. 其原因类似上例, 要通过构造对称的 $(x_1-x_2)^2$ 进而找到不对称的 $x_1-x_2$, 进而破坏 Vieta 定理的对称性来求得 $x_1,x_2$.
 
-考虑 $f(x)=a_nx^n+\cdots+a_1x+a_0\in K[x]$, 设其根为 $\alpha_1,\cdots,\alpha_n$, 则其分裂域为 $L=K[\alpha_1,\cdots,\alpha_n]$. 若存在映射 $\sigma$ 使 $\sigma(f(x))=0$ 的根仍为 $\alpha_1,\cdots,\alpha_n$, 易于验证 $\sigma$ 是 $L\rightarrow L$ 的域同构. 又 $f(x)\in K[x]$ 且 $\sigma(a_i)=a_i$, 故 $\sigma\mid_K=id$.
+考虑 $f(x)=a_nx^n+\cdots+a_1x+a_0\in K[x]$, 设其根为 $\alpha_1,\cdots,\alpha_n$, 则其分裂域为 $L=K[\alpha_1,\cdots,\alpha_n]$. 若存在映射 $\sigma$ 使 $\sigma(f(x))=0$ 的根仍为 $\alpha_1,\cdots,\alpha_n$, 易于验证 $\sigma$ 是 $L\rightarrow L$ 的域同构. 又 $f(x)\in K[x]$ 且又由 Vieta 定理 $\sigma(a_i)=a_i$, 故 $\sigma\mid_K=id$.
 
-将所有这样的 $\sigma$ 找出, 定义集合 $G=Gal(L/K)=\{域同构\sigma:L\rightarrow L\mid \sigma\mid_K=id\}$. 事实上, $Gal(L/K)$ 对映射的复合构成群, 称为 Galois 群. 此时 $Gal(L/K)\cong S_n$.
+将所有这样的 $\sigma$ 找出, 定义集合 $G=Gal(L/K)=\{域同构\sigma:L\rightarrow L\ :\  \sigma\mid_K=id\}$. 事实上, $Gal(L/K)$ 对映射的复合构成群, 称为 Galois 群. 此时 $Gal(L/K)\cong S_n$.
 
 下面考虑 $f(x)=ax^3+bx^2+cx+d=0\in K[x]$. 由 Vieta 定理, $\left\{\begin{matrix}
 x_1+x_2+x_3=-\dfrac b a\\ 
