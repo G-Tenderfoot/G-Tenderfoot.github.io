@@ -70,6 +70,7 @@ nav:
       - 唯一分解整环: Abstract algebra/2.2.md
       - 单变元多项式: Abstract algebra/2.3.md
     - Galois 理论概述:
+      - Galois 理论概述: Abstract algebra/Galois理论概述/Galois理论概述.md
       - 引言: Abstract algebra/Galois理论概述/Galois_0.md
   - 常微分方程:
     - 概念及一阶常微分方程:
