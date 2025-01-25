@@ -72,6 +72,7 @@ nav:
     - Galois 理论概述:
       - Galois 理论概述: Abstract algebra/Galois理论概述/Galois理论概述.md
       - 引言: Abstract algebra/Galois理论概述/Galois_0.md
+      - 方程与扩域: Abstract algebra/Galois理论概述/Galois_1.md
   - 常微分方程:
     - 概念及一阶常微分方程:
       - 概念: ODE/1.1.md
