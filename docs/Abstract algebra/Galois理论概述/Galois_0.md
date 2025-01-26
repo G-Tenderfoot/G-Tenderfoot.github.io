@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # 理论概述
 
 考虑 $f(x)=a_nx^n+\cdots+a_1x+a_0,a_n\neq0$ 无重根. 设 $F=\mathbb Q[a_n,\cdots,a_0]$ 为 $f(x)$ 的系数域. 再设 $f(x)$ 根为 $\alpha_1.\cdots,\alpha_n$ 且 $\alpha_i\neq\alpha_j$. 取 $E=F[\alpha_1.\cdots,\alpha_n]$ 则 $E$ 为 $F$ 的分裂域, 即包含 $f(x)$ 所有根的最小域.

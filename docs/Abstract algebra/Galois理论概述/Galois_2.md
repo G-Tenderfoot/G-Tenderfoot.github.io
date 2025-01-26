@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # 群与域扩张
 
 这一节, 我们将逐步建立 $Gal(L/K)$ 的子群与 $K\subset E\subset L$ 中间域的对应关系.
