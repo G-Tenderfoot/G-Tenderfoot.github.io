@@ -2,7 +2,7 @@
 
 下面, 我们以域扩张的定义入手来推导它.
 
-## Def 1
+## Def 1 [域扩张]
 
 $K$ 是一个域, $K$ 是 $L$ 的子域, 则称 $K\subset L$ 是一个域扩张.
 
@@ -10,11 +10,11 @@ $K$ 是一个域, $K$ 是 $L$ 的子域, 则称 $K\subset L$ 是一个域扩张.
 
 设 $K\subset L$ 是一个域扩张, 则 $L$ 是一个 $K$- 线性空间. $[L:K]:= \dim_K L$ 为扩张次数.
 
-## Def 3
+## Def 3 [代数扩张]
 
 设 $K\subset L$ 是域扩张. 若对于 $\alpha\in L$, 存在 $f(x)\in K[x]$ 使 $f(\alpha)=0$, 则称 $\alpha\in L$ 为 $K$ 上的代数元. 若 $\forall\alpha\in L$, $\alpha$ 为代数元, 则 $K\subset L$ 为代数扩张.
 
-## Def 4
+## Def 4 [有限扩张]
 
 若 $[L:K]<+\infty$ 则称 $K\subset L$ 为有限扩张, 否则为无限扩张.
 
@@ -26,7 +26,7 @@ $K$ 是一个域, $K$ 是 $L$ 的子域, 则称 $K\subset L$ 是一个域扩张.
 
 设 $\alpha_1,\cdots,\alpha_m\in K$ 是 $F$ 上的一组基, $\beta_1,\cdots,\beta_n\in L$ 是 $K$ 上的一组基. $\forall x\in L$, $\exists\lambda_j\in K$ 使 $x=\displaystyle\sum\lambda_j\beta_j$. 而对于任意 $\lambda_j\in K$, 存在 $a_{ij}\in F$ 使 $\lambda_j=\displaystyle\sum a_{ij}\alpha_i$. 带入 $x$, 有 $x=\displaystyle\sum\displaystyle\sum a_{ij}\alpha_i\beta_j$. 即 $x$ 可由 $\alpha_i\beta_j$ 在 $F$ 上线性表出. 因此 $\dim_F L\leqslant m\cdot n$. 下证 $\alpha_i\beta_j$ 在 $F$ 上线性无关. 设 $h_{ij}\in F$ 使 $\displaystyle\sum\displaystyle\sum h_{ij}\alpha_i\beta_j=\displaystyle\sum\displaystyle\sum (h_{ij}\alpha_i)\beta_j=0$. 又由 $\beta_j$ 在 $K$ 上线性无关, 因此 $\displaystyle\sum h_{ij}\alpha_i=0$. 又因为 $\alpha_i$ 在 $F$ 上线性无关, $h_{ij}=0$. 因此 $\alpha_i\beta_j$ 是 $L$ 的一组基. 因此 $\dim_F L= m\cdot n$.
 
-## Def 5 (极小多项式)
+## Def 5 [极小多项式]
 
 设 $K\subseteq L$, $\alpha\in L$ 是 $K$ 上的代数元.令 $\mu_\alpha(x)$ 是 $\left\{f(x)\in K[x]\mid f(\alpha)=0\right\}$ 中次数最小, 首一的多项式. 则称 $\mu_\alpha(x)$ 是 $\alpha$ 在 $K$ 上的极小多项式.
 
@@ -48,7 +48,7 @@ $K$ 是一个域, $K$ 是 $L$ 的子域, 则称 $K\subset L$ 是一个域扩张.
 
 设 $K\subseteq L$ 是域扩张, $\alpha,\beta\in L$ 是 $K$ 上的代数元, 则 $\alpha\pm\beta,\alpha\beta,\alpha\beta^{-1}$ 也是 $K$ 上的代数元. 特别地, $\left\{\alpha\in L\mid \alpha 是 K 上的代数元\right\}$ 是一个域.
 
-## Def 6 (分裂域)
+## Def 6 [分裂域]
 
 设 $K$ 是一个域. $f(x)\in K[x]$ 非零首一. $L\supseteq K$ 是扩域. $L$ 称 $f(x)$ 的分裂域,如果
 
@@ -119,3 +119,44 @@ $\Leftarrow:$ 则 $f(x)$ 与 $f'(x)$ 在 $L$ 中无公共根. 因此无重根. �
 
 $\Rightarrow:$ 设 $f(x)=(x-\alpha_1)\cdots(x-\alpha_n)$, 其中 $\alpha_i\neq\alpha_j$. 则 $f'(x)=\displaystyle\sum\dfrac{f(x)}{x-\alpha_i}$, 此时 $(x-\alpha_i)\nmid f'(x)$. 因此 $(f(x),f'(x))=1$.
 
+## Cor 3
+
+不可约多项式 $f(x)$ 在 $L$ 上有重根 $\iff$ $f'(x)=0$.
+
+### Proof
+
+$f(x)$ 有重根 $\iff$ $(f(x),f'(x))\neq 1$ $\iff$ $f(x)\mid f'(x)$ $\Rightarrow$ $f'(x)=0$.
+
+## Def 7 [可分]
+
+1. $f(x)$ 称为可分多项式如果它的每个不可约因子都无重根, 即导数非零. 
+2. $\alpha$ 称为 $K$ 上的可分元如果 $\mu_\alpha(x)$ 是可分多项式.
+3. $K\subset L$ 称为可分扩张如果 $L$ 中每个元素都是可分元.
+
+## Cor 4 (重要)
+
+设 $L$ 是 $f(x)\in K[x]$ 的分裂域. 如果 $K\subseteq L$ 是可分扩张则 $|Gal(L/K)|=[L:K]$.
+
+### Proof
+
+只需证 $f(x)$ 在 $L$ 上无重根 (由 **Cor 2**). 在 $K[x]$ 中, $f(x)=f_1(x)\cdots f_s(x)$ 为不可约分解, 其中 $f_i(x)\in K[x]$ 不可约. 又 $L$ 是 $f(x)$ 的分裂域, 因此存在 $\alpha_i\in L$ 使 $f_i(\alpha_i)=0$. 因此 $\mu_{\alpha_i}(x)\backsim f_i(x)$. 又因为 $K\subseteq L$ 是可分扩张, 因此 $\alpha_i$ 为可分元, 因此 $f_i(x)$ 为可分多项式, 即 $f_i(x)$ 无重根. 因此 $f(x)$ 无重根.
+
+## Cor 5 (重要)
+
+设 $L$ 是可分多项式 $f(x)\in K[x]$ 的分裂域. $\forall \alpha\in L$, 令 $\mu_\alpha(x)$ 是 $\alpha$ 的极小多项式.则对 $\mu_\alpha(x)$ 的任意两个根 $\alpha_1,\alpha_2\in L$, $\exists\varphi\in Gal(L/K)$ 使 $\varphi(\alpha_1)=\alpha_2$.
+
+### Proof
+
+$\mu_\alpha(x)\in K[x]$ 是不可约多项式. 考虑取值映射 $\psi_{\alpha_i}:K[x]\rightarrow K[\alpha_i], h(x)\mapsto h(\alpha_i)$, 其中 $i=1,2$. 则 $\ker\psi_{\alpha_i}=(\mu_{\alpha_i}(x))$, $K[x]/(\mu_{\alpha_i}(x))\cong K[\alpha_i]$. 令 $\eta=\psi_{\alpha_2}\cdot\psi_{\alpha_1}^{-1}:K[\alpha_1]\rightarrow K[\alpha_2]$ 且 $\eta\mid_K=id$. 由 $f(x)\in K[x]\subseteq K[\alpha_i][x]$, $L$ 是 $f(x)\in K[\alpha_i][x]$ 的分裂域. 故存在同构 $\varphi:L\rightarrow L$ 使 $\varphi\mid_{K[\alpha_1]}=\eta$ (由 **Thm 4 Remark 3**). 此时 $\varphi(\alpha_1)=\alpha_2$ 且 $\varphi\mid_K=id$.
+
+### Remark
+
+先通过取值映射找到 $\eta$ 使 $\eta(\alpha_1)=\alpha_2$, 再将其延拓成 $L\rightarrow L$ 的域同构.
+
+## Def 8 [正规扩张]
+
+代数扩张 $K\subset L$ 称为正规扩张如果 $L$ 的每个元素的极小多项式的根都在 $L$ 中.
+
+## Def 9 [Galois 扩张]
+
+$K\subseteq L$ 是有限, 可分, 正规扩张, 则称其为 Galois 扩张.
