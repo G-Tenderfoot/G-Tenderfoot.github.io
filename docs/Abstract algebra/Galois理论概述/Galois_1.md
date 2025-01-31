@@ -88,7 +88,7 @@ $[L:K]>1$ 时, 设小于 $[L:K]$ 的情形成立. 此时 $f(x)$ 至少有一个�
 
 记 $\mu_{\alpha_1}(x)=b_kx^k+\cdots+b_1x+b_0$. 则 $0=b_k\alpha_1^k+\cdots+b_1\alpha_1+b_0\in L_1$. 因此 $0=\phi(b_k\alpha_1^k+\cdots+b_1\alpha_1+b_0)$ $=\overline{b_k}\phi(\alpha_1)^k+\cdots+\overline{b_1}\phi(\alpha_1)+\overline{b_0}$. 因此 $\phi(\alpha_1)$ 是 $\overline{\mu_{\alpha_1}}(x)$ 的根. 因此 $|H_\eta(L,\overline{L})|\leqslant m$. 故只需证明若 $\beta\in\overline{L}$ 是 $\overline{\mu_{\alpha_1}}(x)$ 的根, 则存在单同态 $\phi:L_1\rightarrow\overline{L},\alpha_1\mapsto\beta$.
 
-考虑取值映射 $\psi_{\alpha_1}: K[x]\rightarrow L, h(x)\mapsto h(\alpha_1)$ 是满同态. 则有 $K[x]/\ker\psi_{\alpha_1}\cong L_1$. 又因为 $\ker\psi_{\alpha_1}=(\mu_{\alpha_1}(x))$, 故 $K[x]/(\mu_{\alpha_1}(x))\xrightarrow[\backsim]{\overline{\psi_{\alpha_1}}}L_1$. 考虑 $\eta_\beta :K[x]\rightarrow \overline{L},h(x)\mapsto\overline{h}(\beta)$. 由 $K[x]$ 是 PID, $\ker \eta_\beta=(h_0(x))$. 另一方面, 由 $\eta_\beta(\mu_{\alpha_1}(x))=0$ 有 $\mu_{\alpha_1}(x)\in\ker\eta_\beta$. 故 $h_0(x)\mid \mu_{\alpha_1}(x)$. 故 $h_0(x)\backsim\mu_{\alpha_1}(x)$. 因此 $\overline{\eta_\beta}:K[x]/(\mu_{\alpha_1}(x))\rightarrow\overline{L}$ 是单射. 令 $\phi=\overline{\eta_\beta}\cdot\overline{\eta_\alpha}^{\ -1}:L_1\rightarrow\overline{L}$ 是单同态且满足条件.
+考虑取值映射 $\psi_{\alpha_1}: K[x]\rightarrow L, h(x)\mapsto h(\alpha_1)$ 是满同态. 则有 $K[x]/\ker\psi_{\alpha_1}\cong L_1$. 又因为 $\ker\psi_{\alpha_1}=(\mu_{\alpha_1}(x))$, 故 $K[x]/(\mu_{\alpha_1}(x))\xrightarrow[\sim]{\overline{\psi_{\alpha_1}}}L_1$. 考虑 $\eta_\beta :K[x]\rightarrow \overline{L},h(x)\mapsto\overline{h}(\beta)$. 由 $K[x]$ 是 PID, $\ker \eta_\beta=(h_0(x))$. 另一方面, 由 $\eta_\beta(\mu_{\alpha_1}(x))=0$ 有 $\mu_{\alpha_1}(x)\in\ker\eta_\beta$. 故 $h_0(x)\mid \mu_{\alpha_1}(x)$. 故 $h_0(x)\sim\mu_{\alpha_1}(x)$. 因此 $\overline{\eta_\beta}:K[x]/(\mu_{\alpha_1}(x))\rightarrow\overline{L}$ 是单射. 令 $\phi=\overline{\eta_\beta}\cdot\overline{\eta_\alpha}^{\ -1}:L_1\rightarrow\overline{L}$ 是单同态且满足条件.
 
 ### Remark 1
 
@@ -142,7 +142,7 @@ $f(x)$ 有重根 $\iff$ $(f(x),f'(x))\neq 1$ $\iff$ $f(x)\mid f'(x)$ $\Rightarro
 
 ### Proof
 
-只需证 $f(x)$ 在 $L$ 上无重根 (由 **Cor 2**). 在 $K[x]$ 中, $f(x)=f_1(x)\cdots f_s(x)$ 为不可约分解, 其中 $f_i(x)\in K[x]$ 不可约. 又 $L$ 是 $f(x)$ 的分裂域, 因此存在 $\alpha_i\in L$ 使 $f_i(\alpha_i)=0$. 因此 $\mu_{\alpha_i}(x)\backsim f_i(x)$. 又因为 $K\subseteq L$ 是可分扩张, 因此 $\alpha_i$ 为可分元, 因此 $f_i(x)$ 为可分多项式, 即 $f_i(x)$ 无重根. 因此 $f(x)$ 无重根.
+只需证 $f(x)$ 在 $L$ 上无重根 (由 **Cor 2**). 在 $K[x]$ 中, $f(x)=f_1(x)\cdots f_s(x)$ 为不可约分解, 其中 $f_i(x)\in K[x]$ 不可约. 又 $L$ 是 $f(x)$ 的分裂域, 因此存在 $\alpha_i\in L$ 使 $f_i(\alpha_i)=0$. 因此 $\mu_{\alpha_i}(x)\sim f_i(x)$. 又因为 $K\subseteq L$ 是可分扩张, 因此 $\alpha_i$ 为可分元, 因此 $f_i(x)$ 为可分多项式, 即 $f_i(x)$ 无重根. 因此 $f(x)$ 无重根.
 
 ## Cor 5 (重要)
 
